@@ -136,10 +136,10 @@ try {
               </div>
               <div id="myNav" class="overlay">
                 <div class="overlay-content">
-                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  <a class="" href="about.html">About </a>
-                  <a class="" href="gallery.html">Notification </a>
-                  <a class="" href="../api/blog.php">Accounts </a>
+                  <a class="" href="../home/index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="../home/about.html">About </a>
+                  <a class="" href="../home/gallery.html">Notification </a>
+                  <a class="" href="#">Accounts </a>
                   <a class="" href="../index.html">Logout </a>
                 </div>
               </div>
