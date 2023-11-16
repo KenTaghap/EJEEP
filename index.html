@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab || www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejeep</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">EJEEP APP</a>
+
+       
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="api/login.php" method="POST">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="text" name="username" id="username" placeholder="Enter your username" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name="password" id="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <button class="button" >Login Now</button>
+			 
+            <div class="login_signup">Create an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="api/insert.php" method="POST">
+            <h2>Signup</h2>
+            <div class="input_box">
+              <input type="text" name="fname" id="fname" placeholder="Enter your firstname" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" name="lname" id="lname" placeholder="Enter your Lastname" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="date" name="bday" id="bday" placeholder="Enter your Birthday" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+			
+			<div class="input_box">
+              <input type="text" list="cars" name="gender" id="gender" placeholder="Enter your Gender" required />
+			  <i class="uil uil-envelope-alt email"></i>
+			  <datalist  id="cars">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="alien">Alien</option>
+  <option value="other" selected>other</option>
+</datalist >
+              
+            </div>
+
+			
+            <div class="input_box">
+              <input type="text" name="pnumber" id="pnumber" placeholder="Enter your Contact Number" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+
+            <div class="input_box">
+              <input type="text" name="id" id="id" placeholder="Enter Licencse ID" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" name="username" id="username" placeholder="Enter your Username" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" name="password" id="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <button class="button">Signup Now</button>
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
