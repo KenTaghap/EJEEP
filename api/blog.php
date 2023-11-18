@@ -42,14 +42,16 @@ try {
         // Handle the "Display" button click
         // You can keep your existing display logic here
     } elseif (isset($_POST['update'])) {
+
+      $Username = $_POST['username'];
         // Handle the "Update" button click
-        $fname = $userInfo['fname'];
-        $lname = $userInfo['lname'];
-        $bday = $userInfo['bday'];
-        $gender = $userInfo['gender'];
-        $pnumber = $userInfo['pnumber'];
-        $id = $userInfo['id'];
-        $password = $userInfo['password'];
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $bday = $_POST['bday'];
+        $gender = $_POST['gender'];
+        $pnumber = $_POST['pnumber'];
+        $id = $_POST['id'];
+        $password = $_POST['password'];
 
         // Create an update filter based on the username
         $filter = ['username' => $Username];
@@ -162,16 +164,26 @@ try {
     <!-- blog section -->
  <center>
        <form action="blog.php" method="POST">
+       <h4>(please click display button to show your other info.)<h4><br>
+                                       
                                     <div>
                                        
                                             <h4 style="color:white;">Username<input type="text" name="username"
-                                                id="username" class="input-text"></h4>
+                                                id="username" class="input-text" readonly></h4>
+                                                <script>
+					// Retrieve the name from localStorage
+					var name = localStorage.getItem("username");
+			
+					// Display the name on page2.html
+					if (name) {
+						document.getElementById("username").value = name;
+					}
+				</script>
 
-                                            <h4>(please hit enter on your Username to display the other info.)<h4><br>
-                                       
+                                            
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userfname ?>" placeholder="Firstname" id="fname"
+                                        <input  type="string" value="<?= $userfname ?>" placeholder="Firstname" id="fname"
                                             name="fname" />
                                     </div>
                                     <div>
@@ -183,25 +195,28 @@ try {
                                     </div>
                                     <div>
                                         <input type="string" value="<?= $usergender ?>" placeholder="gender" id="gender"
-                                            name="gender" />
+                                            name="gender"/>
                                     </div>
                                     <div>
                                         <input type="string" value="<?= $userpnumber ?>"
-                                            placeholder="Contact Number" id="pnumber" name="pnumber" />
+                                            placeholder="Contact Number" id="pnumber" name="pnumber"/>
                                     </div>
                                     <div>
                                         <input type="string" value="<?= $userid ?>" placeholder="id" id="id"
-                                            name="id" />
+                                            name="id"/>
                                     </div>
                                     <div>
                                         <input type="string" value="<?= $userpassword ?>" placeholder="Password" id="password"
                                             name="password" />
                                     </div>
+                                    <br><br>
                                     <div class="d-flex">
 									<center>
-                                        <button type="submit" id="displayButton" name="display" class="btn btn-primary">Display</button>
+                                        <button type="submit" id="display" name="display" class="btn btn-primary" onclick="showElements()">Display</button>
 										&nbsp;&nbsp;
-                                        <button type="submit" id="updateButton" name="update" class="btn btn-primary">Update</button>
+
+  </script>
+                                        <button type="submit" id="update" name="update" class="btn btn-primary">Update</button>
 										</center>
                                     </div>
 								
