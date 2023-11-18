@@ -68,11 +68,26 @@
 
     <!-- slider section -->
     <section class=" slider_section position-relative">
+     
       <div class="container-fluid">
         <div class="row slider-row">
           <div class="col-lg-3 offset-lg-1">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
+                <center>
+                  <h3 style="color:white;">Welcome, <span id="displayName"></span>!</h3>
+                  <script>
+                      // Retrieve the name from localStorage
+                      var name = localStorage.getItem("username");
+              
+                      // Display the name on page2.html
+                      if (name) {
+                          document.getElementById("displayName").textContent = name;
+                      }
+                  </script>
+                   </center> 
+                   <br>
+                   <br>
                 <div class="carousel-item active">
                   <div class="detail-box">
                     <h4>
@@ -102,7 +117,9 @@
 					  <br>
 					  <br>
 					  <br>
-				
+            <br>
+					  <br>
+
                     </p>
                     <div>
                      
