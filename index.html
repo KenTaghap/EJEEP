@@ -33,8 +33,17 @@
             <h2>Login</h2>
             <div class="input_box">
               <i class="uil uil-user-circle"></i>
-              <input type="text" name="username" id="username" placeholder="Enter your username" required />
-              
+              <input type="text" name="username" id="username" placeholder="Enter your username" onclick="sendName()" required />
+              <script>
+                function sendName() {
+                    // Get the value entered in the textbox
+                    var name = document.getElementById("username").value;
+        
+                    // Use localStorage to store the name
+                    localStorage.setItem("username", name);
+          document.cookie = `username=${name}`;
+                }
+            </script>
             </div>
             <div class="input_box">
               <input type="password" name="password" id="password" placeholder="Enter your password" required />
