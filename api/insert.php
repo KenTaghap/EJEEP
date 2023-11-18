@@ -24,7 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Check if username already exists
     $existingUser = $collection->findOne(['username' => $username]);
     if ($existingUser) {
+        echo "<center>";
         echo "Username already exists.";
+        echo "</center>";
     } else {
         // Insert new user into MongoDB
         $newUser = [
@@ -39,11 +41,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         ];
         $collection->insertOne($newUser);
-        echo "Registration successful!";
+        echo "<center>";
+        echo "<h1> Registration successful! </h1>";
+        echo "</center>";
     }
 }
 
 
 
 ?>
-<div id="center_button"><button onclick="location.href='../index.html'">Back to Home</button></div>
+<center>
+<div id="center_button"><button onclick="location.href='../index.html'">Procced to Login</button></div>
+<center>
