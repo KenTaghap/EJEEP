@@ -81,24 +81,25 @@
             </p>
 				<form action="../api/myaccupdate.php" method="POST"> 
 			<label> Username: </label>
-	
-			<input type="text" id="Username" name="Username" placeholder="Enter your Username"  required>
-
+			<input type="text" id="Username" name="Username" placeholder="none"  readonly>
+      <script>
+        // Retrieve the name from localStorage
+        var name = localStorage.getItem("username");
+    
+        // Display the name on page2.html
+        if (name) {
+          document.getElementById("Username").value = name;
+        }
+      </script>
 			
 			<div>
-            <a onclick="displayText(this)">
-              on the road
-            </a>
+            <a onclick="displayText(this)">on the road</a>
 			</div>
 			<div>
-            <a onclick="displayText(this)">
-             in terminal
-            </a>
+            <a onclick="displayText(this)">in terminal</a>
 			</div>
 			<div>
-            <a onclick="displayText(this)">
-              not available
-            </a>
+            <a onclick="displayText(this)">not available</a>
 			</div>
 			</center>
 <br>
