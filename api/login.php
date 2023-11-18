@@ -2,6 +2,7 @@
 require 'vendor/autoload.php';
 
 error_reporting(E_ERROR | E_PARSE);
+ob_start();
 
 // Connect to MongoDB Atlas
 $mongoClient = new MongoDB\Client("mongodb+srv://Clyde:Bsit123@cluster0.832ttzt.mongodb.net/");
@@ -22,18 +23,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user) {
         // Successful login, set session variables or redirect to a protected area
-      
-
-        echo "Successfully log in!";
-        echo '<br>';
-        echo '<a href="../home/index.html">Go Back</a>';
+        header("Location: home/index.html");
         
     } else {
         // Invalid login, display an error message
-        echo "Invalid username or password";
-        echo '<br>';
+        echo "<center>";
+        echo "<h1> Invalid username or password </h1>";
         echo '<a href="../index.html">Go Back</a>';
+        echo "</center>";
         
     }
 }
+ob_end_flush();
 ?>
