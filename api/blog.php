@@ -142,6 +142,7 @@ try {
                   <a class="" href="../home/about.html">About </a>
                   <a class="" href="../home/gallery.html">Notification </a>
                   <a class="" href="#">Accounts </a>
+                  <a class="" href="../home/emer.html">Emergency </a>
                   <a class="" href="../index.html">Logout </a>
                 </div>
               </div>
