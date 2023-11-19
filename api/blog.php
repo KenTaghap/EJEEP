@@ -159,18 +159,19 @@ try {
     </header>
     <!-- end header section -->
   </div>
-
+<section class="gallery_section layout_padding">
   <div class="layout_padding-bottom">
-
+<br><br>
     <!-- blog section -->
  <center>
        <form action="blog.php" method="POST">
-       <h4>(please click display button to show your other info.)<h4><br>
+       <h5>(please click display button to show your other info.)<h5><br>
                                        
                                     <div>
                                        
-                                            <h4 style="color:white;">Username<input type="text" name="username"
-                                                id="username" class="input-text" readonly></h4>
+                                            <h4>Username</h4>
+                                            <input type="text" name="username"
+                                                id="username" class="input-text" readonly>
                                                 <script>
 					// Retrieve the name from localStorage
 					var name = localStorage.getItem("username");
@@ -211,19 +212,18 @@ try {
                                             name="password" />
                                     </div>
                                     <br><br>
-                                    <div class="d-flex">
-									<center>
+                                    
+									
                                         <button type="submit" id="display" name="display" class="btn btn-primary" onclick="showElements()">Display</button>
 										&nbsp;&nbsp;
 
-  </script>
                                         <button type="submit" id="update" name="update" class="btn btn-primary">Update</button>
-										</center>
+								
                                     </div>
 								
                                 </form>
 	 </center>
-
+        </section>
   <!-- end info section -->
 
   <!-- footer section -->
