@@ -27,10 +27,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
     } else {
         // Invalid login, display an error message
-        echo "<center>";
-        echo "<h1> Invalid username or password </h1>";
-        echo '<a href="../index.html">Go Back</a>';
-        echo "</center>";
+        echo '
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blue Background Page</title>
+  <style>
+    body {
+      background-color: lightblue; /* Set the background color to blue */
+      color: white; /* Set text color to white for better visibility */
+      font-family: Arial, sans-serif; /* Set font for better readability */
+      margin: 0; /* Remove default margin */
+      padding: 20px; /* Add some padding for content */
+    }
+  </style>
+</head>
+<body>
+<center>
+<h1> Invalid username or password </h1>
+<a href="../index.html">Go Back</a>
+</center>
+</body>
+</html>
+';
         
     }
 }
