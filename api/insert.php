@@ -38,9 +38,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'id' => $id,
 			'username' => $username,
             'password' => $password,
+		'notif' => "none",
             'Rfid' => "none",
 		'in' => "none",
 		'out' => "none",
+		'context' => "none",
+		'emergency' => "none",
+		
 
         ];
         $collection->insertOne($newUser);
