@@ -38,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'id' => $id,
 			'username' => $username,
             'password' => $password,
+            'Rfid' => "none",
 
         ];
         $collection->insertOne($newUser);
@@ -50,6 +51,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejeep</title>
+  <style>
+    body {
+      background-color: lightblue; /* Set the background color to blue */
+      color: white; /* Set text color to white for better visibility */
+      font-family: Arial, sans-serif; /* Set font for better readability */
+      margin: 0; /* Remove default margin */
+      padding: 20px; /* Add some padding for content */
+    }
+  </style>
+</head>
+<body>
 <center>
 <div id="center_button"><button onclick="location.href='../index.html'">Procced to Login</button></div>
 <center>
+</body>
+</html>
+
+
+
+
+
