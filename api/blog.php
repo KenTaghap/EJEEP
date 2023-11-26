@@ -170,7 +170,7 @@ try {
                                     <div>
                                        
                                             <h4>Username</h4>
-                                            <input type="text" name="username"
+                                            <input style="text-align: center;" type="text" name="username"
                                                 id="username" class="input-text" readonly>
                                                 <script>
 					// Retrieve the name from localStorage
@@ -185,30 +185,30 @@ try {
                                             
                                     </div>
                                     <div>
-                                        <input  type="string" value="<?= $userfname ?>" placeholder="Firstname" id="fname"
+                                        <input style="text-align: center;"  type="string" value="<?= $userfname ?>" placeholder="Firstname" id="fname"
                                             name="fname" />
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userlname ?>" placeholder="Lastname" id="lname"
+                                        <input style="text-align: center;" type="string" value="<?= $userlname ?>" placeholder="Lastname" id="lname"
                                             name="lname" />
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userbday ?>" placeholder="Birthday" id="bday" name="bday" />
+                                        <input style="text-align: center;" type="string" value="<?= $userbday ?>" placeholder="Birthday" id="bday" name="bday" />
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $usergender ?>" placeholder="gender" id="gender"
+                                        <input style="text-align: center;" type="string" value="<?= $usergender ?>" placeholder="gender" id="gender"
                                             name="gender"/>
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userpnumber ?>"
+                                        <input style="text-align: center;" type="string" value="<?= $userpnumber ?>"
                                             placeholder="Contact Number" id="pnumber" name="pnumber"/>
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userid ?>" placeholder="id" id="id"
+                                        <input style="text-align: center;" type="string" value="<?= $userid ?>" placeholder="id" id="id"
                                             name="id"/>
                                     </div>
                                     <div>
-                                        <input type="string" value="<?= $userpassword ?>" placeholder="Password" id="password"
+                                        <input style="text-align: center;" type="string" value="<?= $userpassword ?>" placeholder="Password" id="password"
                                             name="password" />
                                     </div>
                                     <br><br>
