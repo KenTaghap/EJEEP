@@ -88,7 +88,7 @@ foreach ($cursor as $document) {
         </li>	
 			<li class="product-item">
             <div class="product-details">
-                <span class="product-name" style="color: wheat;">Title</span>
+                <span class="product-name" style="color: wheat;">Content</span>
 				&nbsp; &nbsp;&nbsp; &nbsp;
           <span class="product-price" style="color: white;"><?php echo $product['content']; ?></span>
             </div>
