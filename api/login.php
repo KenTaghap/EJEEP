@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <title>Blue Background Page</title>
   <style>
     body {
-      background-color: #4A5A9B; /* Set the background color to blue */
+      background-color: #0077b6; /* Set the background color to blue */
       color: white; /* Set text color to white for better visibility */
       font-family: Arial, sans-serif; /* Set font for better readability */
       margin: 0; /* Remove default margin */
@@ -56,24 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br>
 <br>
 <br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <h1> Invalid username or password </h1>
 <button><a href="../index.html">Go Back</a><
 </center>
