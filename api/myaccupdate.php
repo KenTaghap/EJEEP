@@ -48,7 +48,7 @@ try {
               <title>Blue Background Page</title>
               <style>
                 body {
-                  background-color: #4A5A9B; /* Set the background color to blue */
+                  background-color: #0077b6; /* Set the background color to blue */
                   color: white; /* Set text color to white for better visibility */
                   font-family: Arial, sans-serif; /* Set font for better readability */
                   margin: 0; /* Remove default margin */
@@ -69,24 +69,6 @@ try {
             <br>
             <br>
             <br><br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <h1> Document updated successfully.. </h1>
             <button><a href="../home/gallery.html">Go Back</a><
             </center>
@@ -109,7 +91,7 @@ try {
               <title>Blue Background Page</title>
               <style>
                 body {
-                  background-color: #4A5A9B; /* Set the background color to blue */
+                  background-color: #0077b6; /* Set the background color to blue */
                   color: white; /* Set text color to white for better visibility */
                   font-family: Arial, sans-serif; /* Set font for better readability */
                   margin: 0; /* Remove default margin */
@@ -130,24 +112,6 @@ try {
             <br>
             <br>
             <br><br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <h1> Document not updated. </h1>
             <button><a href="../home/gallery.html">Go Back</a><
             </center>
@@ -169,7 +133,7 @@ try {
           <title>Blue Background Page</title>
           <style>
             body {
-              background-color: #4A5A9B; /* Set the background color to blue */
+              background-color: #0077b6; /* Set the background color to blue */
               color: white; /* Set text color to white for better visibility */
               font-family: Arial, sans-serif; /* Set font for better readability */
               margin: 0; /* Remove default margin */
@@ -190,24 +154,6 @@ try {
         <br>
         <br>
         <br><br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <h1> Please submit the form to update user information. </h1>
         <button><a href="../home/gallery.html">Go Back</a><
         </center>
