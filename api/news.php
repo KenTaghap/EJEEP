@@ -62,7 +62,7 @@ foreach ($cursor as $document) {
 </head>
 <body>
 <center>
-	<h1 style="color: white;">Product List</h1>
+	<h1 style="color: white;">News & Update</h1>
     <ul class="product-list">
         <?php foreach ($productData as $product) : ?>
             <li class="product-item">
