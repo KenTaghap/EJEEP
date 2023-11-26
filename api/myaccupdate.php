@@ -40,24 +40,182 @@ try {
         $result = $collection->updateOne($filter, $update);
 
         if ($result->getModifiedCount() > 0) {
+            echo '
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Blue Background Page</title>
+              <style>
+                body {
+                  background-color: #4A5A9B; /* Set the background color to blue */
+                  color: white; /* Set text color to white for better visibility */
+                  font-family: Arial, sans-serif; /* Set font for better readability */
+                  margin: 0; /* Remove default margin */
+                  padding: 20px; /* Add some padding for content */
+                }
+              </style>
+            </head>
+            <body>
+            <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1> Document updated successfully.. </h1>
+            <button><a href="../home/gallery.html">Go Back</a><
+            </center>
+            </body>
+            </html>
+            ';
 
 
-            echo "Document updated successfully.";
-        echo '<br>';
-        echo '<a href="../home/gallery.html">Go Back</a>';
+
+
         
             
             
         } else {
+            echo '
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+              <meta charset="UTF-8">
+              <title>Blue Background Page</title>
+              <style>
+                body {
+                  background-color: #4A5A9B; /* Set the background color to blue */
+                  color: white; /* Set text color to white for better visibility */
+                  font-family: Arial, sans-serif; /* Set font for better readability */
+                  margin: 0; /* Remove default margin */
+                  padding: 20px; /* Add some padding for content */
+                }
+              </style>
+            </head>
+            <body>
+            <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1> Document not updated. </h1>
+            <button><a href="../home/gallery.html">Go Back</a><
+            </center>
+            </body>
+            </html>
+            ';
 
-            echo "Document not updated.";
-        echo '<br>';
-          echo '<a href="../home/gallery.html">Go Back</a>';
+
+
+
+
         }
     } else {
-        echo "Please submit the form to update user information.";
-        echo '<br>';
-          echo '<a href="../home/gallery.html">Go Back</a>';
+        echo '
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <title>Blue Background Page</title>
+          <style>
+            body {
+              background-color: #4A5A9B; /* Set the background color to blue */
+              color: white; /* Set text color to white for better visibility */
+              font-family: Arial, sans-serif; /* Set font for better readability */
+              margin: 0; /* Remove default margin */
+              padding: 20px; /* Add some padding for content */
+            }
+          </style>
+        </head>
+        <body>
+        <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1> Please submit the form to update user information. </h1>
+        <button><a href="../home/gallery.html">Go Back</a><
+        </center>
+        </body>
+        </html>
+        ';
+
+
         
     }
 } catch (MongoDB\Driver\Exception\Exception $e) {
