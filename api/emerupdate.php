@@ -88,7 +88,7 @@ try {
             <br>
             <br>
             <h1> Document updated successfully. </h1>
-            <button><a href="../home/gallery.html">Go Back</a><
+            <button><a href="../home/emer.html">Go Back</a><
             </center>
             </body>
             </html>
@@ -144,7 +144,7 @@ try {
             <br>
             <br>
             <h1> Document not updated. </h1>
-            <button><a href="../home/gallery.html">Go Back</a><
+            <button><a href="../home/emer.html">Go Back</a><
             </center>
             </body>
             </html>
@@ -201,7 +201,7 @@ try {
         <br>
         <br>
         <h1> Please submit the form to update user information. </h1>
-        <button><a href="../home/gallery.html">Go Back</a><
+        <button><a href="../home/emer.html">Go Back</a><
         </center>
         </body>
         </html>
