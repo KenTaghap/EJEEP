@@ -1,6 +1,8 @@
 <?php
 require 'vendor/autoload.php'; // Load Composer's autoloader
 
+error_reporting(E_ERROR | E_PARSE);
+
 // MongoDB connection configuration
 $mongoURI = "mongodb+srv://Clyde:Bsit123@cluster0.832ttzt.mongodb.net/";
 $dbName = "EJEEP";
